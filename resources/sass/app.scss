@@ -1,0 +1,89 @@
+// Variables
+$primary: #62872fda;
+$secondary: #f19a0eda;
+$success: #8fd62cda;
+$danger: #FF6B6Bda;
+$warning: #FFCE00da;
+$body-bg: #FEF5D4;
+$body-color: #583607;
+$font-family-sans-serif: 'Poppins', sans-serif;
+
+// Importar Bootstrap y sus variables
+@import 'bootstrap/scss/bootstrap';
+
+// Estilos personalizados
+body {
+    background-color: $body-bg;
+    color: $body-color;
+    font-family: $font-family-sans-serif;
+}
+
+// Navbar
+.navbar {
+    border-bottom: 4px solid darken($primary, 10%);
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+// Footer
+footer {
+    background-color: $secondary;
+    color: darken($secondary, 40%);
+}
+
+// Cards
+.card-custom {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+// Botones personalizados
+.btn-custom {
+    background-color: $primary;
+    border: 0.5px solid lighten($primary, 10%);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: 600;
+
+    &:hover {
+        background-color: darken($primary, 10%);
+    }
+}
+
+// Formularios
+.form-custom {
+    background: #FEF0BF;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+// Tablas
+.table-light {
+    --bs-table-bg: #d6891cda;
+}
+
+// Inputs
+input.form-control,
+select.form-control,
+textarea.form-control {
+    border-radius: 0.5rem;
+}
+
+// Títulos
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 600;
+}
